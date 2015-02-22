@@ -11,6 +11,15 @@ h1, h2, h3, h4, h5, h6 {
 p {
 	color:#333;
 }
+a{
+	color: #0000ff;
+	text-decoration: none;
+}
+a:hover {color:#FF0000;
+text-decoration: underline;}
+
+a:visited {color:#00FF00;
+}
 
 .vidList li {
 	list-style: none;
@@ -40,7 +49,9 @@ border: 1px solid #eee;
 border-radius: 5px;
 	
 }
-
+.vidList li:nth-child(3n+1) {
+width: 30%;
+}
 .vidList li a img{
 width: 100%
 }
@@ -65,6 +76,15 @@ color: #333;
 	font-weight: normal;
 font-style: italic;
 }
+.imgWrap img:hover {
+	width:120%;
+	margin-left:-10%; 
+}
+
+input:focus {
+	border:1px solid #FF0000;
+	outline: 1px solid #FF0000;
+}
 }
 @media (min-width:540px) and (max-width:800px) {
 .vidList li {
@@ -73,18 +93,22 @@ font-style: italic;
 border: 1px solid #eee;
 /* padding: 5px; */
 border-radius: 5px;
-	
 }
 
+.vidList li:nth-child(3n+1) {
+width: 44%;
+}
 .vidList li a img{
 width: 100%
 }
-.imgWrap{
+.imgWrap {
 	padding: 5px;
 	height: 180px;
 	overflow: hidden;
 }
-
+.imgWrap img:hover {
+	width:120%;
+}
 .vidInfo{
 height: 100px;
 overflow: hidden;
